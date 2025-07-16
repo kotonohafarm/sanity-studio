@@ -320,6 +320,12 @@ export const garlicEggYolkPage = defineType({
                   type: 'array',
                   of: [{ type: 'string' }],
                 }),
+                defineField({
+                  name: 'purchaseUrl',
+                  title: '購入URL',
+                  type: 'url',
+                  validation: (rule) => rule.required(),
+                }),
               ],
             }),
           ],

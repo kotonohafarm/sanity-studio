@@ -115,6 +115,24 @@ export const peechanzOwnerPage = defineType({
           of: [{ type: 'block' }],
           description: '特典の詳細を箇条書きで記述',
         }),
+        defineField({
+          name: 'benefitImage1',
+          title: '特典画像1',
+          type: 'image',
+          options: {
+            hotspot: true,
+          },
+          description: '特典セクションに表示する画像1',
+        }),
+        defineField({
+          name: 'benefitImage2',
+          title: '特典画像2',
+          type: 'image',
+          options: {
+            hotspot: true,
+          },
+          description: '特典セクションに表示する画像2',
+        }),
       ],
     }),
 

@@ -54,13 +54,22 @@ export const peechanzOwnerPage = defineType({
           description: '例: 毎月限定2名',
         }),
         defineField({
-          name: 'heroImage',
-          title: 'ヒーロー画像',
+          name: 'heroImage1',
+          title: 'ヒーロー画像1',
           type: 'image',
           options: {
             hotspot: true,
           },
-          description: 'ヒーローセクションに表示するぴーちゃんズの画像',
+          description: 'ヒーローセクションに表示するぴーちゃんズの画像1',
+        }),
+        defineField({
+          name: 'heroImage2',
+          title: 'ヒーロー画像2',
+          type: 'image',
+          options: {
+            hotspot: true,
+          },
+          description: 'ヒーローセクションに表示するぴーちゃんズの画像2',
         }),
       ],
     }),

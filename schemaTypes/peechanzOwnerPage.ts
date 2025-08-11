@@ -84,6 +84,15 @@ export const peechanzOwnerPage = defineType({
           of: [{ type: 'block' }],
           description: 'ことのはファームの紹介と共同オーナーへの想い',
         }),
+        defineField({
+          name: 'aboutImage',
+          title: 'アバウト画像',
+          type: 'image',
+          options: {
+            hotspot: true,
+          },
+          description: 'アバウトセクションに表示する画像',
+        }),
       ],
     }),
 

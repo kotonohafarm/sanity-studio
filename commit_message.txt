@@ -1,1 +1,0 @@
-Add benefitImage1 and benefitImage2 to peechanzOwnerPage schema

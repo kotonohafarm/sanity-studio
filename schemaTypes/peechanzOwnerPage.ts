@@ -258,6 +258,15 @@ export const peechanzOwnerPage = defineType({
             }),
           ],
         }),
+        defineField({
+          name: 'faqImage',
+          title: 'よくある質問画像',
+          type: 'image',
+          options: {
+            hotspot: true,
+          },
+          description: 'よくある質問セクションに表示する画像',
+        }),
       ],
     }),
 

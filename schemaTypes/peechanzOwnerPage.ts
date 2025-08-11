@@ -218,6 +218,12 @@ export const peechanzOwnerPage = defineType({
           },
           description: '価格セクションに表示する画像',
         }),
+        defineField({
+          name: 'purchaseLink',
+          title: '決済リンクURL',
+          type: 'url',
+          description: '「今すぐオーナーになる」ボタンの決済リンクURL',
+        }),
       ],
     }),
 

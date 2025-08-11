@@ -209,6 +209,15 @@ export const peechanzOwnerPage = defineType({
           type: 'string',
           description: '例: ※ぴーちゃんズ共同オーナーは、最大10名限定です。今月は、2名様を募集しています。',
         }),
+        defineField({
+          name: 'pricingImage',
+          title: '価格セクション画像',
+          type: 'image',
+          options: {
+            hotspot: true,
+          },
+          description: '価格セクションに表示する画像',
+        }),
       ],
     }),
 

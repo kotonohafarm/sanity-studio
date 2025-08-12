@@ -202,6 +202,43 @@ export const garlicEggYolkPage = defineType({
         }),
       ],
     }),
+    defineField({
+      name: 'testimonials',
+      title: '愛用者さまの声',
+      type: 'array',
+      of: [
+        defineArrayMember({
+          type: 'object',
+          fields: [
+            defineField({
+              name: 'name',
+              title: '名前',
+              type: 'string',
+            }),
+            defineField({
+              name: 'comment',
+              title: 'コメント',
+              type: 'text',
+            }),
+            defineField({
+              name: 'image',
+              title: '写真',
+              type: 'image',
+              options: {
+                hotspot: true,
+              },
+            }),
+          ],
+          preview: {
+            select: {
+              title: 'name',
+              subtitle: 'comment',
+              media: 'image',
+            },
+          },
+        }),
+      ],
+    }),
 
     // 飲み方
     defineField({

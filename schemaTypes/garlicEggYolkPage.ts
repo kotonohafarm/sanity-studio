@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'sanity';
+import { defineField, defineType, defineArrayMember } from 'sanity';
 
 export const garlicEggYolkPage = defineType({
   name: 'garlicEggYolkPage',
